@@ -8,7 +8,38 @@
  * @function firstNonRepeatedCharacter
  * @param {String} string 
  * @returns {String}
+ * 
+ * 
+ * const firstNonRepeatedCharacter = function (string) {
+  // TODO: your solution here
+    for (i=0 ; i<string.length ; i++){
+       
+    if (string.indexOf(string[i])===string.lastIndexOf(string[i]) ){
+     
+        return string[i]  
+    }
+     
+    }
+     return ''
+    }
+ * 
+ * 
+ * 
  */
 const firstNonRepeatedCharacter = function (string) {
-  // TODO: your solution here
+ 
+
+  for (i=0 ; i<string.length ; i++){
+    var char =string[i]
+if (string.indexOf(char)===string.lastIndexOf(char) ){
+    return char
+    
 }
+ 
+}
+return ''
+
+
+}
+
+
